@@ -97,9 +97,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
-# NFC
-TARGET_USES_NQ_NFC := true
-
 # Partitions
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
