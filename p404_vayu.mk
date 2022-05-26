@@ -18,6 +18,7 @@ $(call inherit-product, vendor/404/config/common.mk)
 P404_BUILDTYPE := SHINKA
 $(call inherit-product, vendor/google/pixel/config.mk)
 $(call inherit-product, vendor/google/gms/config.mk)
+TARGET_GAPPS_ARCH := arm64
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
