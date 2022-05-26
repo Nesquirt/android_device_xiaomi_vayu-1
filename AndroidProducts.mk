@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xperience_vayu.mk
+    $(LOCAL_DIR)/p404_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    xperience_vayu-eng \
-    xperience_vayu-userdebug \
-    xperience_vayu-user
+    p404_vayu-eng \
+    p404_vayu-userdebug \
+    p404_vayu-user
