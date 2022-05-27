@@ -16,15 +16,14 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 $(call inherit-product, vendor/404/configs/common.mk)
 P404_BUILDTYPE := SHINKA
 
-$(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/config.mk)
+$(call inherit-product, vendor/gms/products/gms.mk)
 TARGET_GAPPS_ARCH := arm64
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := P404_vayu
+PRODUCT_NAME := p404_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
