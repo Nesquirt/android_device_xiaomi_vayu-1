@@ -13,9 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common p404 configurations
-$(call inherit-product, vendor/404/config/common.mk)
-
+$(call inherit-product, vendor/404/configs/common.mk)
 P404_BUILDTYPE := SHINKA
+
 $(call inherit-product, vendor/google/pixel/config.mk)
 $(call inherit-product, vendor/google/gms/config.mk)
 TARGET_GAPPS_ARCH := arm64
