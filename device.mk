@@ -597,8 +597,6 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor \
     WfdCommon
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 TARGET_BOARD_PLATFORM := msmnile
 TARGET_PROVIDES_POWERHAL := true
