@@ -12,14 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common XPerience configurations
-$(call inherit-product, vendor/xperience/config/common.mk)
+# Inherit common CygnusOS configurations
+$(call inherit-product, vendor/cygnus/configs/common.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GAPPS := true
 
-PRODUCT_NAME := xperience_vayu
+PRODUCT_NAME := cygnus_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro

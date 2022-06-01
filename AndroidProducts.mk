@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xperience_vayu.mk
+    $(LOCAL_DIR)/cygnus_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    xperience_vayu-eng \
-    xperience_vayu-userdebug \
-    xperience_vayu-user
+    cygnus_vayu-user \
+    cygnus_vayu-userdebug \
+    cygnus_vayu-eng
