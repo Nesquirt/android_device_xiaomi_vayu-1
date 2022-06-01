@@ -14,6 +14,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common CygnusOS configurations
 $(call inherit-product, vendor/cygnus/configs/common.mk)
+$(call inherit-product, device/qcom/common/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
