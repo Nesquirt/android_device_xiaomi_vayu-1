@@ -415,8 +415,7 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_vp9dec \
     libcodec2_soft_vp8dec \
     libcodec2_soft_vp9enc \
-    libcodec2_soft_vp8enc \
-    libcodec2_soft_xaacdec
+    libcodec2_soft_vp8enc
 
 # Network
 PRODUCT_PACKAGES += \
