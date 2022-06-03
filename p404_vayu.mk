@@ -20,8 +20,7 @@ $(call inherit-product, vendor/gms/products/gms.mk)
 TARGET_GAPPS_ARCH := arm64
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := p404_vayu
 PRODUCT_DEVICE := vayu
