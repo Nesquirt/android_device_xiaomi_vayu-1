@@ -48,7 +48,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     pm.dexopt.boot=verify \
-    pm.dexopt.first-boot=verify \
     pm.dexopt.install=speed-profile \
     dalvik.vm.image-dex2oat-filter=speed \
     dalvik.vm.image-dex2oat-threads=8 \
