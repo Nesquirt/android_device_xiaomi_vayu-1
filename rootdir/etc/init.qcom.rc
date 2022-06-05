@@ -241,6 +241,10 @@ on boot
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
 
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
 
@@ -760,3 +764,15 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     task_profiles ProcessCapacityHigh HighPerformance
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop logger
+
