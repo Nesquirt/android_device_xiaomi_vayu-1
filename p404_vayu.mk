@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common p404 configurations
 $(call inherit-product, vendor/404/configs/common.mk)
 P404_BUILDTYPE := SHINKA
-WITH_GAPPS :=   true
+WITH_GAPPS := true
 
 $(call inherit-product, vendor/gms/products/gms.mk)
 TARGET_GAPPS_ARCH := arm64
