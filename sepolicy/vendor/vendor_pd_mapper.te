@@ -1,3 +1,0 @@
-# allow to read the modem
-allow vendor_pd_mapper vfat:dir r_dir_perms;
-allow vendor_pd_mapper vfat:file r_file_perms;

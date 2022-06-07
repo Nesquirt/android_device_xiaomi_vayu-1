@@ -1,3 +1,0 @@
-# allow to read Wifi firmware
-allow vendor_rfs_access vfat:dir r_dir_perms;
-allow vendor_rfs_access vfat:file r_file_perms;
